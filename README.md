@@ -14,6 +14,9 @@ will save a .txt file to ~/Downloads/ohlife_YYYYMMDD.txt.
 
 Script idea was born after reading http://brettterpstra.com/logging-with-day-one-geek-style/
 
+*Please* backup your Day One archive before you attempt to use this script.
+Although it works for me, I don't guarantee anything!
+
 Usage
 -----
 
