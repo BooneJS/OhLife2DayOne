@@ -1,9 +1,11 @@
-# ohlife2dayone.pl #
+ohlife2dayone.pl
+================
 
 BooneJS (http://boonejs.tumblr.com)
 Use and modify freely, attribution appreciated. Thanks!
 
-# Description #
+Description
+-----------
 
 This script works with the Day One command line utility found in the
 Application Package. The input to this script is the exported text file
@@ -12,7 +14,8 @@ will save a .txt file to ~/Downloads/ohlife_YYYYMMDD.txt.
 
 Script idea was born after reading http://brettterpstra.com/logging-with-day-one-geek-style/
 
-# Usage #
+Usage
+-----
 
 1. Save this file someplace (~/Downloads, perhaps?)
 2. Open a Terminal in OS X (/Applications/Utilities/Terminal.app)
