@@ -41,6 +41,11 @@ while(<>) {
 			system("echo \"$message\" | /Applications/\"Day One.app\"/Contents/MacOS/dayone -d=\"$savedDate $time\" new") ;
 		}
 		
+		# If date is specified as YYYY-MM-DD, dayone seems to assume date/time is UTC and subtract for your timezone.
+		# For instance, UTC -6 (Central Time Zone), so 8:00PM shows up at 2:00PM in Day One.
+		# However, YYYY/MM/DD seems to assume date/time is current time zone.
+		$line =~ s/-/\//g;
+
 		$savedDate = $line;
 		$message = ""; # reset message
 		$justCapturedDate = 1;
