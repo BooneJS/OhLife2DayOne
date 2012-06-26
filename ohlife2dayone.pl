@@ -57,6 +57,9 @@ while(<>) {
 		}
 		# Need to escape any " in $line, otherwise system() will interpret it as the end of the string to execute.
 		$line =~ s/"/\\"/g;
+
+      # Escape $
+      $line =~ s!\$!\\\$!g;
 		
 		# Append string to the message.
 		$message = $message . $line . "\n";
