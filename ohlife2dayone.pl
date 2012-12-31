@@ -38,7 +38,8 @@ while(<>) {
 		# Reached a new date. If there's a current date, call dayone and enter the information.
 		chomp($line);
 		if($savedDate ne "") {
-			system("echo \"$message\" | /Applications/\"Day One.app\"/Contents/MacOS/dayone -d=\"$savedDate $time\" new") ;
+			# dayone is installed to /usr/local/bin. Download from http://dayoneapp.com/downloads/dayone-cli.pkg
+			system("echo \"$message\" | /usr/local/bin/dayone -d=\"$savedDate $time\" new") ;
 		}
 		
 		# If date is specified as YYYY-MM-DD, dayone seems to assume date/time is UTC and subtract for your timezone.
