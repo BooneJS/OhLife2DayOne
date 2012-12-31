@@ -7,8 +7,7 @@ Use and modify freely, attribution appreciated. Thanks!
 Description
 -----------
 
-This script works with the Day One command line utility found in the
-Application Package. The input to this script is the exported text file
+This script works with the Day One command line utility that can be downloaded from http://dayoneapp.com/tools/. The input to this script is the exported text file
 from OhLife.com (https://ohlife.com/export). Clicking the "Export" button
 will save a .txt file to ~/Downloads/ohlife_YYYYMMDD.txt.
 
